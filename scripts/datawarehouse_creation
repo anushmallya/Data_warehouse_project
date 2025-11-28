@@ -1,1 +1,3 @@
+-- Creating a DataBase 'Data Warehouse'
 
+CREATE DATABASE DateWarehouse;
