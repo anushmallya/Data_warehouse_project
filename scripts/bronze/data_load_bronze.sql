@@ -124,6 +124,6 @@ BEGIN
 
 	SET @layer_end_time = GETDATE();
 	PRINT'------------------------------------------------------------------------------------------';
-	PRINT'-- Load Duration of Whole Bronze Layer: ' + CAST(DATEDIFF(second,@start_time,@end_time) AS NVARCHAR) + ' seconds';
+	PRINT'-- Load Duration of Whole Bronze Layer: ' + CAST(DATEDIFF(second,@layer_start_time,@layer_end_time) AS NVARCHAR) + ' seconds';
 	PRINT'------------------------------------------------------------------------------------------';
 END
