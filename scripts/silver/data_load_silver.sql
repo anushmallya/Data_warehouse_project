@@ -1,3 +1,15 @@
+/*
+====================================================================================================
+Loading Clean data to the Silver Layer (Bronze -> Silver)
+====================================================================================================
+Script Purpose:
+    This script will load the clean data into 'silver' schema as stored procedure from the data in 'bronze' schema.
+    It performs the following actions:
+    - Truncates the tables before loading.
+    - Uses the 'INSERT' Command to load the data from bronze tables to the tables.
+	- Does some major Data transformation to transform the data in 'bronze' layer 
+======================================================================================================
+*/
 -- Inserting data into the table
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
