@@ -39,6 +39,8 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 ## 📂 Project Files
 **datasets** – Input data files used for ingestion.
 
+**airflow/dags/** - DAG Python scripts that specifies the tasks
+
 **documents** - Contains the Modeling and Architecture images
 
 **ingestion** - Contains a Python script where I have built a pipeline
